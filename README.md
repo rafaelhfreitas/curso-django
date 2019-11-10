@@ -1,2 +1,6 @@
 # curso-django
-Projeto para estudo da Stack Python para web. Stack: Python 3.7  / Pyenv / Pipenv / Django / Flake8 
+Projeto para estudo da Stack Python para web. Stack: Python 3.7  / Pyenv / Pipenv / Django / Flake8
+
+
+
+[![codecov](https://codecov.io/gh/rafaelhfreitas/curso-django/branch/master/graph/badge.svg)](https://codecov.io/gh/rafaelhfreitas/curso-django)
