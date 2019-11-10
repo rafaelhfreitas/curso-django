@@ -4,7 +4,7 @@ sudo: true
 
 python:
   - 3.7
-  -
+
 end:
   global:
     - PIPENV_VENV_IN_PROJECT=1
