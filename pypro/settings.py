@@ -18,6 +18,9 @@ from functools import partial
 import dj_database_url
 from decouple import config, Csv
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -77,10 +80,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'pypro.wsgi.application'
 
+# Configuration Django Debug Toolbar
+
+INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+
+if DEBUG:
+    INSTALLED_APPS.append('debug_toolbar')
+    MIDDLEWARE.insert(0, 'debug_toolbar.middleware.DebugToolbarMiddleware')
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 
 default_db_url = 'sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
 parse_database = partial(dj_database_url.parse, conn_max_age=600)
@@ -170,3 +179,8 @@ if AWS_ACCESS_KEY_ID:
 
     INSTALLED_APPS.append('s3_folder_storage')
     INSTALLED_APPS.append('storages')
+
+SENTRY_DSN = config('SENTRY_DSN', default=None)
+
+if SENTRY_DSN:
+    sentry_sdk.init(dsn=SENTRY_DSN, integrations=[DjangoIntegration()])

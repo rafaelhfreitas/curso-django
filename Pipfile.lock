@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9057a5684960ff37f2a668a34bc86630ac4ac5c65c7818bfbbafe205d1c4c555"
+            "sha256": "56c05fe8959b07bf3eab88f075d7efb205735ff85d827d91fba0e7cf3df7746c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,13 @@
             ],
             "version": "==1.13.19"
         },
+        "certifi": {
+            "hashes": [
+                "sha256:e4f3620cfea4f83eedc95b24abd9cd56f3c4b146dd0177e83a21b4eb49e21e50",
+                "sha256:fd7c7c74727ddcf00e9acd26bba8da604ffec95bf1c2144e67aff7a8b50e6cef"
+            ],
+            "version": "==2019.9.11"
+        },
         "collectfast": {
             "hashes": [
                 "sha256:47b6129197a748ad45a5ad6c07fbeb3973c1f22212822299c5dfbd397c3286e4",
@@ -53,6 +60,14 @@
             ],
             "index": "pypi",
             "version": "==2.2.7"
+        },
+        "django-debug-toolbar": {
+            "hashes": [
+                "sha256:24c157bc6c0e1648e0a6587511ecb1b007a00a354ce716950bff2de12693e7a8",
+                "sha256:77cfba1d6e91b9bc3d36dc7dc74a9bb80be351948db5f880f2562a0cbf20b6c5"
+            ],
+            "index": "pypi",
+            "version": "==2.1"
         },
         "django-s3-folder-storage": {
             "hashes": [
@@ -157,6 +172,14 @@
                 "sha256:b780f2411b824cb541dbcd2c713d0cb61c7d1bcadae204cdddda2b35cef493ba"
             ],
             "version": "==0.2.1"
+        },
+        "sentry-sdk": {
+            "hashes": [
+                "sha256:09e1e8f00f22ea580348f83bbbd880adf40b29f1dec494a8e4b33e22f77184fb",
+                "sha256:ff1fa7fb85703ae9414c8b427ee73f8363232767c9cd19158f08f6e4f0b58fc7"
+            ],
+            "index": "pypi",
+            "version": "==0.13.2"
         },
         "six": {
             "hashes": [
