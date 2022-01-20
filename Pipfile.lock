@@ -18,10 +18,10 @@
     "default": {
         "boto3": {
             "hashes": [
-                "sha256:5e2c41f7c565da816775724ef956cdfa0e3376e39c05b1d5a04796a026521cdf",
-                "sha256:81fb7d1a81294e3b8e3da78dafb56ae14c35cf7cec60b90cf3f0c07dd866f7f9"
+                "sha256:66aef9a6d8cad393f69166112ba49e14e2c6766f9278c96134101314a9af2992",
+                "sha256:cfe85589e4a0a997c7b9ae7432400b03fa6fa5fea29fdc48db3099a903b76998"
             ],
-            "version": "==1.10.27"
+            "version": "==1.20.40"
         },
         "botocore": {
             "hashes": [
