@@ -92,12 +92,8 @@
             "version": "==0.15.2"
         },
         "gunicorn": {
-            "hashes": [
-                "sha256:1d8012b859f4cd9e45753f1ccb33a94df1ab9e1b7af4f81ac871680b4042b08b",
-                "sha256:5c6f119298dd692ba49d83ea351aeefdb63d33e32179d91d173d942525115890"
-            ],
-            "index": "pypi",
-            "version": "==20.0.3"
+            "hashes": [],
+            "version": "==21.2.0"
         },
         "jmespath": {
             "hashes": [
